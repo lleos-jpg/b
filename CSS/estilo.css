@@ -1,6 +1,105 @@
-body{
-    color: aliceblue;
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
-        
+:root {
+    --morado: #681e77;
+    --verde: #54b67eb2;
+    --blanco: #ffffff;
+    --fondo-opaco: rgba(0, 0, 0, 0.6);
+    --sombra: 0 0 15px rgba(255, 255, 255, 0.2);
 }
+
+body.fondo{
+    background-image: url("../img/descarga.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--verde);
+    text-shadow: 0 0 15px #000000;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.contenedor-login {
+    background: var(--fondo-opaco);
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: var(--sombra);
+    backdrop-filter: blur(5px);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow:  0 0 10px #000000;
+    
+}
+
+.icono {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px var(--verde);
+}
+
+h1 {
+    margin: 0.2em 0;
+    color: var(--verde);
+    font-size: 1.8em;
+    text-shadow: 0 0 15px #000000;
+}
+
+.subtitulo {
+    font-size: 1em;
+    color: var(--blanco);
+    margin-bottom: 1.5em;
+    text-shadow: 0 0 15px #000000;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input {
+    padding: 0.8em;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.btnLogin {
+    background-color: var(--verde);
+    color: #000;
+    border: none;
+    padding: 0.8em;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    box-shadow:  0 0 10px #1f3523, 0 0 20px #3d6d45
+}
+
+.btnLogin:hover {
+    background-color: #36613d;
+    
+}
+
+.registro {
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+.registro a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
